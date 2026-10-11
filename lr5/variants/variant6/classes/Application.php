@@ -44,7 +44,6 @@ class Application
             }
         }
 
-        // Додаємо поле ролі до бази, створеної старою версією застосунку.
         $columns = $db->query('PRAGMA table_info(users)')->fetchAll();
         $hasRole = false;
         foreach ($columns as $column) {
